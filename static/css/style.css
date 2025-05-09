@@ -6,17 +6,39 @@
 
 body {
   min-height: 100vh;
-  background-color: black;
+  background-color: #1E1E1E;
   color: whitesmoke;
   font-size: 3rem;
 }
 
 nav {
-  padding: 1rem;
-  background-color: #44B78B;
+  padding: 1rem 2rem;  /* More padding for space */
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.5rem;  /* Smaller font size for elegance */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #444444; /* Optional border for separation */
+  background-color: transparent;  /* Transparent navbar background */
 }
+
+nav button {
+  text-decoration: none;
+  color: #81dbb8;  /* Soft green for links */
+  padding: 0.5rem 1rem;  /* Added space between links */
+  transition: all 0.3s ease;  /* Smooth transition for hover effect */
+  font-weight: 500;  /* Slightly lighter font weight for elegance */
+  text-transform: capitalize;  /* Capitalize each word for a neat appearance */
+  background: transparent;  /* Transparent background for buttons */
+  border: none;  /* No border for buttons */
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: #69c78d;  /* Darker green on hover */
+  transform: scale(1.1);  /* Slight scale-up effect for "pop" */
+}
+
 
 main {
   padding: 1rem;
