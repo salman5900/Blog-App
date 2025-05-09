@@ -12,31 +12,49 @@ body {
 }
 
 nav {
-  padding: 1rem 2rem;  /* More padding for space */
-  color: white;
-  font-size: 1.5rem;  /* Smaller font size for elegance */
+  padding: 1rem 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #444444; /* Optional border for separation */
-  background-color: transparent;  /* Transparent navbar background */
+  background-color: transparent;
+  font-size: 1rem;
 }
 
+nav a,
 nav button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;  /* Adjusted to look visually equal */
+  margin: 0 0.5rem;
+  color: #81dbb8;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
   text-decoration: none;
-  color: #81dbb8;  /* Soft green for links */
-  padding: 0.5rem 1rem;  /* Added space between links */
-  transition: all 0.3s ease;  /* Smooth transition for hover effect */
-  font-weight: 500;  /* Slightly lighter font weight for elegance */
-  text-transform: capitalize;  /* Capitalize each word for a neat appearance */
-  background: transparent;  /* Transparent background for buttons */
-  border: none;  /* No border for buttons */
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
+nav a:hover,
 nav button:hover {
-  color: #69c78d;  /* Darker green on hover */
-  transform: scale(1.1);  /* Slight scale-up effect for "pop" */
+  color: #69c78d;
+  transform: scale(1.1);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logout {
+  display: inline;
+  margin: 0;
 }
 
 
@@ -131,4 +149,16 @@ a:hover {
 
 .logout-button:hover {
   opacity: .85;
+}
+
+.page-align {
+  display: flex;                /* Flexbox for easy centering */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;          /* Center vertically */
+  min-height: 100vh;             /* Full viewport height */
+  padding: 20px;                /* Padding around the container */
+}
+
+.page-align > * {
+  text-align: center;           /* Center content inside the container */
 }

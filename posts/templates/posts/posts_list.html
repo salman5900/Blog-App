@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block content %}
-<section>
+<section class="d-flex flex-column justify-content-start align-items-center" style="height: 80vh;">
     <h1>Posts</h1>
     {% for post in posts %}
-    <article class="post">
+    <article class="post mb-4" style="max-width: 800px; width: 100%;">
         <h2>
             <a href="{% url 'posts:page'  slug=post.slug %}">
             {{ post.title }}
@@ -19,5 +19,4 @@
     </article>
     {% endfor %}
 </section>
-    
 {% endblock %}

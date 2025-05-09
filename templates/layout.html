@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar sticky-top">
     <a href="/">Home</a> 
-    <div class="navbar-right">
+    <div class="navbar-right ">
         <a href="/about">About</a> 
         <a href="{% url 'posts:list' %}">Posts</a> 
 
@@ -25,7 +25,7 @@
             <a href="{% url 'posts:new' %}">New Post</a> 
             <form class="logout" action="{% url 'users:logout' %}" method="post" style="display:inline;">
                 {% csrf_token %}
-                <button class="logout-button" aria-label="User Logout" title="User Logout">Logout</button>
+                <button class="nav-btn" aria-label="User Logout" title="User Logout">Logout</button>
             </form> 
         {% else %} 
             <a href="{% url 'users:register' %}">Register</a> 
